@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-height: max-content;
+  background: url(/images/macbook_desk.jpg);
+  object-fit: cover;
+  background-size: cover;
+}
+.window {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  left: 50px;
+  background-color: rgba(21, 53, 80, 0.555);
+  box-shadow: 2px 5px 50px 5px rgba(221, 214, 169, 0.5);
+  margin: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  top: 100px;
+  bottom: 100px;
+  z-index: 1000;
+}
+.themWin{
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  margin: 15px;
+  font-weight: 555;
+  color: rgb(255, 255, 255);
+}
+.glassmorph{
+  position: relative;
+  display: block;
+  margin: 15px;
+  font-size: 25px;
+  font-family: 600;
+  color: #d1d1d1;
+  font-style: italic;
+  opacity: 1;
+}
+.bannerImg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  height: 600px;
+}
+
+.content{
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  width: 70%;
+  margin: 30px;
+  color: #FFF;
+  text-align: left;
+}
+.timeCont{
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  color: #9c9c9c;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+}
+footer{
+    position: relative;
+    top: 100px;
+}

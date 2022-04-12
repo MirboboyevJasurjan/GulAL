@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(/images/macbook_desk.jpg);
+    object-fit: contain;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+}
+.home{
+    overflow: hidden;
+}
+.data{
+    top: 50px;
+}
+.boxData{
+    max-width: 1440px;
+    flex-wrap: wrap;
+}
+.cards{
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    height: 400px;
+}
+.cardImg{
+    width: 250px;
+    height: 100px;
+    border-radius: 20px;
+    /* margin-top: 30px; */
+}
+.carousel{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    bottom: 50px;
+    margin: 50px;
+}
+.box{
+    margin-top: 300px;
+}
+footer{
+    /* position: relative; */
+    top: 200px;
+    z-index: 100;
+}
+
+.black{
+      background: rgba(21, 53, 80, 0.2); 
+}
+
+@media (max-width: 1980px){
+
+}
+@media (max-width: 1440px){
+
+}
+@media (max-width: 991px){
+
+};
+@media (max-width: 947px){
+
+};
+@media (max-width: 768px){
+
+};
+@media (max-width: 680px){
+    .carousel{
+        left: 20px;
+    }
+};

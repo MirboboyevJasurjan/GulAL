@@ -1,0 +1,87 @@
+.animBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 100px;
+}
+.animation-text {
+  top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  opacity: 0.8;
+  height: 30px;
+  background-color: #ede4d9;
+  /* animation: anim 20s linear; */
+  border: none;
+  border-radius: 5px;
+}
+.web-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 1;
+  animation: animText 3s linear infinite;
+}
+.animation-text .web-title .h5 {
+  margin-left: 80px;
+}
+@keyframes animText {
+  10%,18%,20%,50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #fff;
+    text-shadow: none;
+  }
+  
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    text-shadow: 0 0 10px #03bcf4, 0 0 10px #fff, 0 0 10px #00da19,
+      0 0 10px #03bcf4, 0 0 10px rgb(38, 109, 38), 0 0 10px rgb(0, 119, 247);
+  }
+}
+@keyframes anim {
+  0% {
+    transform: scale(0.1);
+    background: rgb(0, 119, 247);
+    opacity: 0.6;
+    margin-left: 100px;
+  }
+  30% {
+    height: 50px;
+    margin-left: -300px;
+  }
+  40% {
+    height: 50px;
+    margin-left: 100px;
+  }
+  50% {
+    transform: scale(1);
+    background: rgb(172, 172, 172);
+    opacity: 1;
+    margin-left: 0px;
+  }
+  70% {
+    opacity: 1;
+    margin-left: -500px;
+  }
+  100% {
+    background: rgb(38, 109, 38);
+    transform: scale(0.1);
+    opacity: 0.2;
+    margin: 0;
+  }
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 690px) {
+  .animation-text .web-title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 320px) {
+}

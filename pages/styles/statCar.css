@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.table-cards{
+    text-align: center;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(190, 190, 190, 0.34), rgba(195, 190, 211, 0.346));
+    border: 1px solid inherit;
+    border-radius: 3%;
+    color: #FFF;
+    transition: 1s;
+}
+.firFloor, .secFloor{
+    margin: 20px;
+}
+.firFloor .card, .secFloor .card{
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+    background:rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);    
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    transition: 1s;
+}
+.table-cards:hover, .table-cards:hover .card{
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+.table-cards:hover .card{
+    border-radius: 20px;
+}
+.table-cards:hover .card:hover{
+    background: linear-gradient(rgba(190, 190, 190, 0.34), rgba(195, 190, 211, 0.346));
+    cursor: pointer;
+    border-radius: 0;
+
+}
+
+.titleOfS{
+    display: block;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    color: linen;
+    margin-top: 50px;
+    font-weight: 700;
+}
+.statYear{
+    text-align: center;
+    font-weight: 600;
+    font-family: 25px;
+    color: #ececec;
+}
+.card-title{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+}
+.card-footer{
+    margin-top: 15px;
+    text-align: center;
+    top: 20px;
+    width: 100%;
+}
+.table-cards.qora{
+    background: linear-gradient(135deg, rgba(43, 43, 43, 0.5), rgba(255, 255, 255, 0.5));
+    background: linear-gradient(135deg, rgba(80, 80, 80, 0.1), rgba(59, 59, 59, 0.363));
+
+}
+.firFloor .card.qora, .secFloor .card.qora{
+    background: linear-gradient(135deg, rgba(43, 43, 43, 0.5), rgba(255, 255, 255, 0.5));
+}

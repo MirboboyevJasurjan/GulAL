@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-height: max-content;
+}
+.container{
+    position: relative;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+
+}
+.container .card{
+    top: 100px;
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background: #FFF;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.5s
+}
+.cards:hover .card{
+    /* filter: blur(1px); */
+    transform: scale(0.9);
+    opacity: 0.5;   
+}
+.container .card:hover{
+    /* filter: blur(0px); */
+    transform: scale(1.1);
+    opacity: 1;   
+}
+
+.container .card .circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    clip-path: circle(180px at center 0);
+    text-align: center;
+}
+.container .card .circle h2{
+    color: #FFF;
+    font-size: 4.5em;
+    padding: 30px 0;
+}
+.container .card .content{
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.container .card .content p{
+    color: #666;
+}
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #000;
+    color: #FFF;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.container .card:nth-child(1) .circle,
+.container .card:nth-child(1) .content a{
+    background: #091864;
+}
+.container .card:nth-child(2) .circle,
+.container .card:nth-child(2) .content a{
+    background: #807b7d;
+}
+.container .card:nth-child(3) .circle,
+.container .card:nth-child(3) .content a{
+    background: #219735;
+}
+.container .card:nth-child(4) .circle,
+.container .card:nth-child(4) .content a{
+    background: #091864;
+}

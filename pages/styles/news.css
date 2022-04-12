@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(/images/macbook_desk.jpg);
+    object-fit: contain;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+}
+.data{
+    top: 50px;
+    position: relative;
+}
+.boxData{
+    max-width: 1440px;
+    flex-wrap: wrap;
+}
+
+.cardImg{
+    width: 250px;
+    height: 100px;
+    border-radius: 20px;
+    /* margin-top: 30px; */
+}
+.newsImg{
+    
+    width: 200px;
+    height: 200px;
+}
+
+
+ .cards .card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 400px;
+    margin: 50px;
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background:rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(50px);    
+    transition: 0.5s;
+
+}
+.content{
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.content h2{
+    font-size: 1.8em;
+    color: #FFF;
+    pointer-events: none;
+    z-index: 1;
+}
+.content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background-color: rgb(110, 106, 106);
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: 0.5s;
+}
+.cards .card:hover .content a{
+    margin-top: -10px;
+    opacity: 1;
+    text-decoration: none;
+    color: #555;
+}
+
+
+/* Footer */
+
+footer{
+    position: relative;
+    top: 200px;
+    z-index: 100;
+}
+@media (max-width: 1980px){
+
+}
+@media (max-width: 1440px){
+
+}
+@media (max-width: 991px){
+
+};
+@media (max-width: 947px){
+
+};
+@media (max-width: 768px){
+
+};
+@media (max-width: 680px){
+    .carousel{
+        left: 20px;
+    }
+};

@@ -1,0 +1,49 @@
+.table-cards{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.534), rgba(185, 190, 211, 0.096));
+    border: 1px solid inherit;
+    border-radius: 3%;
+    color: #FFF;
+}
+.firFloor, .secFloor{
+    margin: 20px;
+}
+.firFloor .card, .secFloor .card{
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+}
+.titleOfS{
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.statYear{
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+}
+.card-title{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+}
+.card-footer{
+    margin-top: 15px;
+    text-align: center;
+    top: 20px;
+    width: 100%;
+
+}
